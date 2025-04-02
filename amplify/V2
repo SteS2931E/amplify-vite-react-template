@@ -1,0 +1,5 @@
+├── amplify
+├── src
+├── amplify_outputs.json <== backend outputs file
+├── package.json
+└── tsconfig.json
