@@ -1,4 +1,5 @@
 import { defineAuth } from '@aws-amplify/backend';
+
 export const auth = defineAuth({
   loginWith: {
     email: {
@@ -7,13 +8,5 @@ export const auth = defineAuth({
       verificationEmailBody: (createCode) =>
         `Use this code to confirm your account: ${createCode()}`,
     },
-  },
-});
-/**
- * Define and configure your auth resource
- * @see https://docs.amplify.aws/gen2/build-a-backend/auth
- */
-  loginWith: {
-    email: true,
   },
 });
